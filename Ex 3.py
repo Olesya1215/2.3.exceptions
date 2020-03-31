@@ -73,11 +73,11 @@ def add_new_doc():
 
 
 def show_all_names(documents):
-    try:
-        for register in documents:
+    for register in documents:
+        try:
             print(register['name'])
-    except KeyError:
-        print('В документе нет поля name')
+        except KeyError:
+            print('В документе нет поля name')
 
 
 def main():
